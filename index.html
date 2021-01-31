@@ -6,15 +6,15 @@
   <title>Zimplats.com</title>
   <!-- CSS only -->
   <script src="https://kit.fontawesome.com/ad0c4e912f.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./stylesheets/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="./stylesheets/styles.css">
 </head>
 <body>
   <main>
-    <nav class="navbar navbar-expand-lg navbar-light top-nav">
+    <nav class="navbar navbar-expand-lg navbar-light top-nav" id="top_nav">
       <div class="dropdown show ml-5">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Head Office
@@ -42,17 +42,23 @@
         </ul>
       </div>
     </nav>
-    <header class="d-flex">
-      <div class="ml-5"><img src="/images/zimplatslogo.png" alt="zimplats logo"><i class="far fa-check-circle" style="font-size: 15px;margin-left: 180px;margin-right: 20px;"></i><span><b>Certified</b></span><i class="far fa-check-circle" style="font-size: 15px;margin-left: 40px;margin-right: 20px;"></i><span><b>Certified</b></span><i class="far fa-check-circle" style="font-size: 15px; margin-left: 40px;margin-right: 20px;"></i><span><b>Certified</b></span>
-        <button class="text-white btn ml-5" type="button"  style="background-color:#021466;">News Alerts Subscriptions</button>
+    <nav class="d-flex" id="logo_nav">
+      <div class="ml-5">
+        <img src="/images/zimplatslogo.png" alt="zimplats logo">
         
+        <span><i class="far fa-check-circle" style="font-size: 15px;margin-left: 180px;margin-right: 20px;"></i><b>Certified</b></span>
+        
+        <span><i class="far fa-check-circle" style="font-size: 15px;margin-left: 40px;margin-right: 20px;"></i><b>Certified</b></span>
+        
+        <span><i class="far fa-check-circle" style="font-size: 15px; margin-left: 40px;margin-right: 20px;"></i><b>Certified</b></span>
+        <button class="text-white btn ml-5" type="button"  style="background-color:#021466;">News Alerts Subscriptions</button>
       </div>
-    </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color:#344A7D">
-      <!-- <a class="navbar-brand" href="#">Navbar</a>
+    </nav>
+    <nav class="navbar sticky-top navbar-expand-md navbar-light" id="main_nav" style="background-color:#344A7D">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button> -->
+      </button>
       <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active mr-3">
@@ -84,6 +90,52 @@
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#"><i class="fas fa-search"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-light" id="mobile_nav">
+      <div class="d-flex justify-content-between py-2">
+        <div>
+          <img src="/images/zimplatslogo.png" alt="zimplats logo">
+        </div>
+        <div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>  
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item active mr-3">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">INVESTOR CENTER</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">SUSTAINABILITY</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">CAREERS</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">MEDIA</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">ALBINISM</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">FEEDBACK</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
           </li>
         </ul>
       </div>

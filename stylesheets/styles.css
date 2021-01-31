@@ -18,3 +18,17 @@ body {
   font-weight: bold; 
   font-size: 0.8rem;
 }
+
+#mobile_nav {
+  display: none;
+}
+
+@media screen and (max-width: 998px) {
+  #main_nav, #logo_nav, #top_nav {
+    display: none !important;
+  }
+
+  #mobile_nav {
+    display: block;
+  }
+}
