@@ -7,13 +7,16 @@
   <!-- CSS only -->
   <script src="https://kit.fontawesome.com/ad0c4e912f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./stylesheets/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 <body>
   <main>
     <nav class="navbar navbar-expand-lg navbar-light top-nav">
       <div class="dropdown show ml-5">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#021466">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Head Office
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -88,24 +91,34 @@
 
     <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
 
-    <div class="carousel-inner vh-100">
+    <div class="carousel-inner vh-100 position-relative">
     <div class="carousel-item h-100 active" style="background:url('/images/zimplats-office5.jpg'); background-size:cover">
-      <div class="">
+      <div class="outer-text" style="position: absolute; top: 115px; left: 70px">
       <h1 class="text-white">Tapping into the future through</h1>
       <p class="text-white" style="font-size: 5rem; font-weight: bold;">MINING</p>
       <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit. </p>
       <button class="text-white">Learn More</button> 
       </div>
     </div>
-    <div class="carousel-item h-100" style="background:url('/images/zimplats-office1.jpg'); background-size:cover">     
+    <div class="carousel-item h-100" style="background:url('/images/zimplats-office1.jpg'); background-size:cover">
+      <div class="outer-text" style="position: absolute; top: 115px; left: 70px">     
       <h1 class="text-white">Supporting Our</h1>
       <p class="text-white" style="font-size: 5rem; font-weight: bold;">INVESTOR</p>
-    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit. </p></div>
+      <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit. </p>
+      <div class="d-flex">
+        <img class="img-fluid position-absolute" style="" src="/images/zimplats-office5.jpg" alt="">
+        <img class="img-fluid" src="/images/zimplats-office5.jpg" alt="">
+        <img class="img-fluid" src="/images/zimplats-office5.jpg" alt="">
+      </div>
+      </div>
+    </div>
     <div class="carousel-item h-100" style="background:url('/images/zimplats-office4.jpeg'); background-size:cover">
+      <div class="outer-text" style="position: absolute; top: 115px; left: 70px">
       <h1 class="text-white">Protecting the safety of our</h1>
       <p class="text-white" style="font-size: 5rem; font-weight: bold;">PEOPLE</p>
-    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit. </p>
-    <button class="text-white">Learn More</button>
+      <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit. </p>
+      <button class="text-white">Learn More</button>
+      </div>
     </div>
     </div>
     
@@ -167,9 +180,34 @@
         </div>
       </div>
     </article>
-    <section class="" style="background-color: #EDEDED;">
-
+    <section class="container-fluid d-flex" style="background-color:#ECECEC;">
+      <div class="row">
+        <div class="col-4 d-flex">
+          <h2>Latest Posts</h2>
+          <p><a class="" href="#">ASX announcements</a></p>
+        </div>
+        <div class="col-4">
+          <h2>Financial Results</h2>
+          <img src="/images/zimplats-office1.jpg" class="h-25">
+          <p><i class="far fa-check-circle" style="font-size: 15px;margin-right: 20px;"></i>2020 Annual Report</p>
+          <hr align="left" style="width: 100%;">
+          <p><i class="far fa-check-circle" style="font-size: 15px;margin-right: 20px;"></i>2019 Annual Report</p>
+          <hr align="left" style="width: 100%;">
+          <p><i class="far fa-check-circle" style="font-size: 15px;margin-right: 20px;"></i>2018 Annual Report</p>
+          <hr align="left" style="width: 100%;">
+          <p><i class="far fa-check-circle" style="font-size: 15px;margin-right: 20px;"></i>2017 Annual Report</p>
+          <hr align="left" style="width: 100%;">
+          <p><i class="far fa-check-circle" style="font-size: 15px;margin-right: 20px;"></i>2016 Annual Report</p>
+          <hr align="left" style="width: 100%;">
+        </div>
+        <div class="col-4">
+          <img src="/images/zimplats-office.jpg" class="h-25">
+        </div>
+      </div> 
     </section>
+    <footer class="bg-dark p-4">
+      <p class="text-center" style="color: #828282;">Copyright 2021 Zimplats, All Right Reserved. Designed by <a class="" href="#">Rumbie Dee</a></p>
+    </footer>
   </main>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

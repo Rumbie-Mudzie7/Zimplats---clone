@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
-.top-nav{
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.top-nav {
   background-color: #EDEDED;
+}
+
+#dropdownMenuButton {
+  background-color:#021466; 
+  font-weight: bold; 
+  font-size: 0.8rem;
 }
