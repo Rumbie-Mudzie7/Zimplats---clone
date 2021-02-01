@@ -23,6 +23,23 @@ body {
   display: none;
 }
 
+#section-img {
+  background-image: url('../images/zimplats-office5.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.section-div-1,
+.section-div-2 {
+  /* padding-left: 50px; */
+  padding-right: 50px;
+  padding-top: 80px;
+}
+
+.section-div-1 {
+  padding-left: 80px;
+}
+
 @media screen and (max-width: 998px) {
   #main_nav, #logo_nav, #top_nav {
     display: none !important;
@@ -32,3 +49,5 @@ body {
     display: block;
   }
 }
+
+
